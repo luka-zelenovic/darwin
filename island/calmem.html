@@ -12,6 +12,12 @@
       left: 0;
 
     }
+		.show {
+			display: block;
+		}
+		.hide {
+			display: none;
+		}
     .container {
       width: 100%;
       position: absolute;
@@ -19,6 +25,38 @@
       left: 0;
 
     }
+		.slike {
+			width: 20%;
+			position: absolute;
+		}
+		#koral1 {
+			top: 0%;
+			left: 50%;
+		}
+		#koral2 {
+			top: 40%;
+			left: 78%;
+		}
+		#koral3 {
+			top: 10%;
+			left: 2%;
+		}
+		#koral4 {
+			top: 41%;
+			left: 25%;
+		}
+		#koral5 {
+			top: 2%;
+			left: 23%;
+		}
+		#koral6 {
+			top: 55%;
+			left: 50%;
+		}
+		#koral7 {
+			top: 52%;
+			left: 5%;
+		}
       body {
         background:#777;
         padding:0;
@@ -42,13 +80,348 @@
 
         100% {opacity: 0;}
       }
+
+
+      table.minimalistBlack {
+        position: absolute;
+        opacity: .95;
+        left: 10%;
+        top: 10%;
+  border: 3px solid #000000;
+  width: 80%;
+  height: 80vh;
+    background-color:lightseagreen;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.minimalistBlack td, table.minimalistBlack th {
+  border: 5px solid #000000;
+  padding: 5px 4px;
+}
+table.minimalistBlack tbody td {
+  font-size: 200%;
+}
+table.minimalistBlack thead {
+  background: skyblue;
+
+}
+table.minimalistBlack thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  border-left: 5px solid #D0E4F5;
+}
+table.minimalistBlack thead th:first-child {
+  border-left: none;
+}
+
+table.minimalistBlack tfoot td {
+  font-size: 14px;
+}
+.male {
+  width: 45%;
+  cursor: pointer;
+}
+.males {
+  width: 45%;
+    cursor: pointer;
+  margin: 0;
+}
+td {
+  width: 10%;
+margin: 0;
+height: 10vh;
+overflow: hidden;
+}
+.headline{
+  position: absolute;
+  top: -3%;
+  left: 40%;
+  font-size: 300%;
+  color: skyblue;
+}
+.introtext  {
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+padding: 10px;
+font-size: 200%;
+width: 50%;
+background-color: white;
+border-radius: 25px;
+border: 1% solid black;
+position: fixed;
+
+top: 80%;
+left: 35%;
+
+}
+#smarac {
+  position: absolute;
+  top: 55%;
+  left: 86%;
+  width: 12%;
+}
+.memorije {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  top: 3%;
+  background-color: lightseagreen;
+  border-radius: 25px;
+  opacity: 0.95;
+
+}
+.title {
+  font-size: 250%;
+  margin-left: 5%;
+  padding: 5px;
+  text-align: center;
+}
+.memory {
+  font-size: 150%;
+  background-color: skyblue;
+  margin: 5%;
+  margin-top: 0;
+  padding: 10px;
+  border-radius: 25px;
+  font-style: oblique;
+}
+.ikone {
+  border-radius: 100%;
+  position: absolute;
+  top: -4%;
+  left: 92%;
+  width: 10%;
+  background-color: skyblue;
+  border: 2px solid white;
+}
+#ikona {
+	position: fixed;
+	top: 2%;
+	left: 0%;
+	width: 5%;
+	height: 9%;
+	cursor: pointer;
+}
+#mem4i {
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  top: 110%;
+
+}
+#mem1i {
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  top: 100%;
+  border: 2px solid white;
+}
+#mem6i {
+  position: absolute;
+  width: 15%;
+  left: 35%;
+  top: 100%;
+  border: 2px solid white;
+}
+#mem6i2{
+  position: absolute;
+  width: 15%;
+  left: 50%;
+  top: 100%;
+  border: 2px solid white;
+}
       	</style>
     	</head>
     	<body>
 
-    		<div id="container">
+        <div id="container">
           <img src="bg.png" alt="" draggable="false">
+          <img src="a.png" alt="" class="slike" id="koral1">
+          <img src="b.png" alt="" class="slike" id="koral2">
+          <img src="c.png" alt="" class="slike" id="koral3">
+          <img src="d.png" alt="" class="slike" id="koral4">
+          <img src="a.png" alt="" class="slike" id="koral5">
+          <img src="d.png" alt="" class="slike" id="koral6">
+          <img src="b.png" alt="" class="slike" id="koral7">
         </div>
+
+<div class="page1" id="kraj">
+<h1 class="headline">April 1836</h1>
+  <table class="minimalistBlack">
+<thead>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>  <img src="c.png" alt="" class="male" id="" onclick="mem1();"></td></tr>
+<tr>
+  <td>4</td><td>5</td><td><img src="d.png" alt="" class="males" id="" onclick="mem2();">
+  <img src="b.png" alt="" class="males" id="" onclick="mem3();"></td><td> <img src="c.png" alt="" class="male" id="" onclick="mem4();"></td>
+<td><img src="b.png" alt="" class="male" id="" onclick="mem5();"></td><td>9</td><td><img src="a.png" alt="" class="male" id="" onclick="mem6();"></td></tr>
+<tr>
+  <td>11</td><td>12</td><td>13</td><td>14</td>
+<td>15</td><td>16</td><td>17</td></tr>
+<tr>
+  <td>18</td><td>19</td><td>20</td><td>21</td>
+<td>22</td><td>23</td><td>24</td></tr>
+<tr>
+  <td>25</td><td>26</td><td>27</td><td>28</td>
+<td>29</td><td>30</td><td></td>
+</tbody>
+</tr>
+</table>
+<img src="darwin1.png" alt="" id="smarac">
+<p class="introtext">You can check some of my old memories here. Click on the corals to see more.</p>
+</div >
+<div class="hide" id="mem1">
+  <h1 class="title">
+    Poor but Plump---Inhabitants
+  </h1>
+  <p class="memory">
+    April 3rd <br>—I went to the settlement, on the point of an islet thickly covered with tall cocoa-nut trees.
+Captain Ross and Mr. Liesk live in a large barn-like house open at both ends, and lined with mats made of woven bark. The whole place had rather a desolate aspect, for there were no gardens to show the signs of care and cultivation.
+
+The natives belong to different islands in the East Indian archipelago: we saw the inhabitants In colour they resemble the Tahitians, from whom they do not widely differ in features. Some of the women, however, show a good deal of the Chinese character. I liked both their general expressions and the sound of their voices. They appeared poor, and their houses were destitute of furniture; but it was evident, from the plumpness of the little children, that cocoa-nuts and turtle afford no bad sustenance.
+
+  </p>
+  <img src="mem1.gif" alt="" id="mem1i">
+    <img src="c.png" alt="" class="ikone">
+</div>
+<div class="hide" id="mem2">
+  <h1 class="title">
+    Wandering fairy spirit
+  </h1>
+  <p class="memory">
+      April 6th <br>
+    We arrived in view of the Keeling or Cocos Islands, situated in the Indian Ocean.
+In every part one meets hermit crabs of more than one species, carrying on their backs the shells which they have stolen from the neighbouring beach.
+Overhead, numerous gannets, frigate-birds, and terns, rest on the trees; and the wood, from the many nests and from the smell of the atmosphere, might be called a sea-rookery. The gannets, sitting on their rude nests, gaze at one with a stupid yet angry air.
+
+Little imagination is required to fancy that so light and delicate a body must be tenanted by some wandering fairy spirit.
+
+  </p>
+  <img src="d.png" alt="" class="ikone">
+</div>
+<div class="hide" id="mem3">
+  <h1 class="title">
+    Mystery of  roots ----used for searching stones
+  </h1>
+  <p class="memory">
+    April 6th <br>
+Chamisso, the justly distinguished naturalist, stating that the inhabitants of the Radack archipelago, a group of lagoon-islands in the midst of the Pacific, obtained stones for sharpening their instruments by searching the roots of trees which are cast upon the beach.
+It will be evident that this must have happened several times, since laws have been established that such stones belong to the chief, and a punishment is inflicted on anyone who attempts to steal them.
+
+  </p>
+  <img src="b.png" alt="" class="ikone">
+</div>
+<div class="hide" id="mem4">
+  <h1 class="title">
+    Crab VS. Cocoa-nuts
+  </h1>
+  <p class="memory">
+    April 7th <br>
+
+    Mr. Liesk tells me that the crab begins by tearing the husk, fibre by fibre, and always from that end under which the three eye-holes are situated; when this is completed, the crab commences hammering with its heavy claws on one of the eye-holes till an opening is made. Then turning around its body, by the aid of its posterior and narrow pair of pincers, it extracts the white albuminous substance.
+
+  </p>
+  <img src="mem4.jpg" alt="" id="mem4i">
+    <img src="c.png" alt="" class="ikone">
+</div>
+<div class="hide" id="mem5">
+  <h1 class="title">
+    The power of stinging
+  </h1>
+  <p class="memory">
+    April 8th <br>
+    Today, by merely touching my face with one of the branches, pain was instantaneously caused because of the genus Millepora from the corals; it increased as usual after a few seconds, and remaining sharp for some minutes, was perceptible for half an hour afterwards. The sensation was as bad as that from a nettle, but more like that caused by the Physalia or Portuguese man-of-war. Little red spots were produced on the tender skin of the arm, which appeared as if they would have formed watery pustules, but did not.
+
+  </p>
+  <img src="b.png" alt="" class="ikone">
+</div>
+<div class="hide" id="mem6">
+  <h1 class="title">
+    Where are you come from, gigantic greenstone?
+  </h1>
+  <p class="memory">
+    April 10th <br>
+    A few miles north of Keeling there is another small atoll, the lagoon of which is nearly filled up with coral-mud. Captain Ross found embedded in the conglomerate on the outer coast, a well-rounded fragment of greenstone, rather larger than a man's head: he and the men with him were so much surprised at this, that they brought it away and preserved it as a curiosity. The occurrence of this one stone, where every other particle of matter is calcareous, certainly is very puzzling. The island has scarcely ever been visited, nor is it probable that a ship had been wrecked there!
+  </p>
+  <img src="a.png" alt="" class="ikone">
+  <img src="mem61.jpg" alt="" id="mem6i">
+  <img src="mem62.jpg" alt="" id="mem6i2">
+</div>
+		<a href="index.html"><img src="icon.png" alt="" id="ikona"></a>
+<script type="text/javascript">
+
+function mem1() {
+  var arrow = document.getElementById('kraj');
+  var div = document.getElementById('mem1');
+
+  arrow.className = "hide";
+  div.className = "show memorije";
+
+
+}
+function mem2() {
+  var arrow = document.getElementById('kraj');
+  var div = document.getElementById('mem2');
+
+  arrow.className = "hide";
+  div.className = "show memorije";
+
+
+}
+function mem3() {
+  var arrow = document.getElementById('kraj');
+  var div = document.getElementById('mem3');
+
+  arrow.className = "hide";
+  div.className = "show memorije";
+
+
+}
+function mem4() {
+  var arrow = document.getElementById('kraj');
+  var div = document.getElementById('mem4');
+
+  arrow.className = "hide";
+  div.className = "show memorije";
+
+
+}
+function mem5() {
+  var arrow = document.getElementById('kraj');
+  var div = document.getElementById('mem5');
+
+  arrow.className = "hide";
+  div.className = "show memorije";
+
+
+}
+function mem6() {
+  var arrow = document.getElementById('kraj');
+  var div = document.getElementById('mem6');
+
+  arrow.className = "hide";
+  div.className = "show memorije";
+
+
+}
+
+</script>
+
 
       </body>
     </html>
