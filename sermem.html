@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Darwin's Account</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+    .container img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+    .ikone {
+      border-radius: 100%;
+      position: absolute;
+      top: -4%;
+      left: 92%;
+      width: 10%;
+      background-color: skyblue;
+      border: 2px solid white;
+    }
+    #mem4i {
+      position: absolute;
+      width: 30%;
+      left: 35%;
+      top: 110%;
+
+    }
+    #mem1i {
+      position: absolute;
+      width: 30%;
+      left: 35%;
+      top: 100%;
+      border: 2px solid white;
+    }
+    #mem6i {
+      position: absolute;
+      width: 15%;
+      left: 35%;
+      top: 100%;
+      border: 2px solid white;
+    }
+    #mem6i2{
+      position: absolute;
+      width: 15%;
+      left: 50%;
+      top: 100%;
+      border: 2px solid white;
+    }
+    .flex {
+      display: flex;
+    }
+		.show {
+			display: block;
+		}
+		.hide {
+			display: none;
+		}
+    .container {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+		.slike {
+			width: 20%;
+			position: absolute;
+		}
+		#koral1 {
+			top: 0%;
+			left: 50%;
+		}
+		#koral2 {
+			top: 40%;
+			left: 78%;
+		}
+		#koral3 {
+			top: 10%;
+			left: 2%;
+		}
+		#koral4 {
+			top: 41%;
+			left: 25%;
+		}
+		#koral5 {
+			top: 2%;
+			left: 23%;
+		}
+		#koral6 {
+			top: 55%;
+			left: 50%;
+		}
+		#koral7 {
+			top: 52%;
+			left: 5%;
+		}
+      body {
+        background:#777;
+        padding:0;
+        margin:0;
+        overflow:hidden;
+        cursor:auto;
+        user-select: none;
+
+      }
+      @keyframes fader2 {
+        0%   {opacity: 0;}
+
+
+        50% {opacity: 100%;}
+
+      }
+
+      @keyframes fader {
+        0%   {opacity: 50%;}
+
+
+        100% {opacity: 0;}
+      }
+
+      .memorije {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        top: 1.5%;
+        background-color: lightseagreen;
+        border-radius: 25px;
+        opacity: 0.95;
+
+      }
+      .memorijed {
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        top: 3%;
+        background-color: lightseagreen;
+        border-radius: 25px;
+        opacity: 0.95;
+
+      }
+      .title {
+        font-size: 250%;
+        color: white;
+        padding: 5px;
+        text-align: center;
+      }
+      .titled {
+        font-size: 250%;
+        margin-left: 5%;
+        padding: 5px;
+        text-align: center;
+      }
+      .memory {
+        font-size: 150%;
+        background-color: skyblue;
+        margin: 5%;
+        margin-top: 0;
+        padding: 10px;
+        border-radius: 25px;
+        font-style: oblique;
+      }
+      input {
+        background-color: skyblue;
+        font-size: 200%;
+        font-style: oblique;
+        color: white;
+        border-radius: 25px;
+        width: 14%;
+        cursor: pointer;
+        border: none;
+      }
+      .results {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3%;
+        height: 73vh  ;
+        border-radius: 30px;
+        background-color: darkcyan;
+        margin-bottom: 3%;
+        overflow-y: scroll;
+
+
+      }
+      .rezultati {
+        width: 60%;
+        margin-left: 5%;
+        background-color: skyblue;
+        height: 33%;
+        border-radius: 25px;
+        display: flex;
+        margin-top: 1%;
+        cursor: pointer;
+        margin-left: 20%;
+      }
+      .slike {
+        width: 30%;
+        position: relative;
+
+      }
+      .ime {
+        width: 40%;
+        color: white;
+        margin: 0;
+        font-style: oblique;
+        font-size: 250%;
+
+
+        position: relative;
+      }
+      #first {
+        margin-left: 10%;
+      }
+
+      #ikona {
+      	position: fixed;
+      	top: 2%;
+      	left: 0%;
+      	width: 5%;
+      	height: 9%;
+      	cursor: pointer;
+      }
+
+      .darwin  {
+        animation: fader;
+        animation-duration: 2s;
+        animation-delay: 8s;
+        animation-fill-mode: forwards;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .darwin img {
+      	position: fixed;
+      	width: 12%;
+      	top: 55%;
+      	left: 0%;
+      	animation: fader2;
+      	animation-duration: 3s;
+      	animation-delay: 0s;
+      	animation-fill-mode: backwards;
+      }
+      .introtext  {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  padding: 10px;
+  font-size: 200%;
+  width: 30%;
+  background-color: white;
+  border-radius: 25px;
+  border: 1% solid black;
+  position: fixed;
+
+  top: 55%;
+  left: 15%;
+  animation: fader2;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+      	</style>
+    	</head>
+    	<body>
+
+        <div id="container">
+          <img src="bg.png" alt="" draggable="false">
+          <img src="a.png" alt="" class="slike" id="koral1">
+          <img src="b.png" alt="" class="slike" id="koral2">
+          <img src="c.png" alt="" class="slike" id="koral3">
+          <img src="d.png" alt="" class="slike" id="koral4">
+          <img src="a.png" alt="" class="slike" id="koral5">
+          <img src="d.png" alt="" class="slike" id="koral6">
+          <img src="b.png" alt="" class="slike" id="koral7">
+        </div>
+
+        <div class="memorije" id="kraj">
+          <h1 class="title">
+           Search by Keywords
+          </h1>
+
+          <input type="button" name="" value="Island" id="first" onclick="island()">
+          <input type="button" name="" value="Animals" onclick="animals()">
+          <input type="button" name="" value="Mr.Liesk " onclick="mr()">
+          <input type="button" name="" value="Cocoa" onclick="cocoa()">
+          <input type="button" name="" value="Pain"  onclick="pain()">
+          <input type="button" name="" value="Show All"  onclick="showAll()">
+          <div class="results">
+            <div id="mem1" class="rezultati hide"onclick="mem1()">
+              <img src="c.png" alt="" class="slike" id="">
+              <p class="ime">Poor but Plump---Inhabitants</p>
+            </div>
+            <div id="mem2" class="rezultati hide" onclick="mem2()">
+              <img src="d.png" alt="" class="slike" id="">
+              <p class="ime">Wandering fairy spirit</p>
+            </div>
+            <div id="mem3" class="rezultati hide"onclick="mem3()">
+              <img src="b.png" alt="" class="slike" id="">
+              <p class="ime">Mystery of  roots ----used for searching stones</p>
+            </div>
+              <div id="mem4" class="rezultati hide"onclick="mem4()">
+                <img src="c.png" alt="" class="slike" id="">
+                <p class="ime">Crab VS. Cocoa-nuts</p>
+              </div>
+              <div id="mem5" class="rezultati hide"onclick="mem5()">
+                <img src="b.png" alt="" class="slike" id="">
+                <p class="ime">The power of stinging</p>
+              </div>
+              <div id="mem6" class="rezultati hide"onclick="mem6()">
+                <img src="a.png" alt="" class="slike" id="">
+                <p class="ime">Where are you come from, gigantic greenstone?</p>
+              </div>
+
+          </div>
+          <div class="darwin">
+            <img src="darwin1.png" alt="">
+            <p class="introtext">You can use some of my keywords to search now. Try them out, then click on desired result. But, soon you will be able to add your own keywords.
+          </p>
+
+          </div>
+        </div>
+        <div class="hide" id="mem1d">
+          <h1 class="titled">
+            Poor but Plump---Inhabitants
+          </h1>
+          <p class="memory">
+            April 3rd <br>—I went to the settlement, on the point of an islet thickly covered with tall cocoa-nut trees.
+        Captain Ross and Mr. Liesk live in a large barn-like house open at both ends, and lined with mats made of woven bark. The whole place had rather a desolate aspect, for there were no gardens to show the signs of care and cultivation.
+
+        The natives belong to different islands in the East Indian archipelago: we saw the inhabitants In colour they resemble the Tahitians, from whom they do not widely differ in features. Some of the women, however, show a good deal of the Chinese character. I liked both their general expressions and the sound of their voices. They appeared poor, and their houses were destitute of furniture; but it was evident, from the plumpness of the little children, that cocoa-nuts and turtle afford no bad sustenance.
+
+          </p>
+          <img src="mem1.gif" alt="" id="mem1i">
+            <img src="c.png" alt="" class="ikone">
+        </div>
+        <div class="hide" id="mem2d">
+          <h1 class="titled">
+            Wandering fairy spirit
+          </h1>
+          <p class="memory">
+              April 6th <br>
+            We arrived in view of the Keeling or Cocos Islands, situated in the Indian Ocean.
+        In every part one meets hermit crabs of more than one species, carrying on their backs the shells which they have stolen from the neighbouring beach.
+        Overhead, numerous gannets, frigate-birds, and terns, rest on the trees; and the wood, from the many nests and from the smell of the atmosphere, might be called a sea-rookery. The gannets, sitting on their rude nests, gaze at one with a stupid yet angry air.
+
+        Little imagination is required to fancy that so light and delicate a body must be tenanted by some wandering fairy spirit.
+
+          </p>
+          <img src="d.png" alt="" class="ikone">
+        </div>
+        <div class="hide" id="mem3d">
+          <h1 class="titled">
+            Mystery of  roots ----used for searching stones
+          </h1>
+          <p class="memory">
+            April 6th <br>
+        Chamisso, the justly distinguished naturalist, stating that the inhabitants of the Radack archipelago, a group of lagoon-islands in the midst of the Pacific, obtained stones for sharpening their instruments by searching the roots of trees which are cast upon the beach.
+        It will be evident that this must have happened several times, since laws have been established that such stones belong to the chief, and a punishment is inflicted on anyone who attempts to steal them.
+
+          </p>
+          <img src="b.png" alt="" class="ikone">
+        </div>
+        <div class="hide" id="mem4d">
+          <h1 class="titled">
+            Crab VS. Cocoa-nuts
+          </h1>
+          <p class="memory">
+            April 7th <br>
+
+            Mr. Liesk tells me that the crab begins by tearing the husk, fibre by fibre, and always from that end under which the three eye-holes are situated; when this is completed, the crab commences hammering with its heavy claws on one of the eye-holes till an opening is made. Then turning around its body, by the aid of its posterior and narrow pair of pincers, it extracts the white albuminous substance.
+
+          </p>
+          <img src="mem4.jpg" alt="" id="mem4i">
+            <img src="c.png" alt="" class="ikone">
+        </div>
+        <div class="hide" id="mem5d">
+          <h1 class="title">
+            The power of stinging
+          </h1>
+          <p class="memory">
+            April 8th <br>
+            Today, by merely touching my face with one of the branches, pain was instantaneously caused because of the genus Millepora from the corals; it increased as usual after a few seconds, and remaining sharp for some minutes, was perceptible for half an hour afterwards. The sensation was as bad as that from a nettle, but more like that caused by the Physalia or Portuguese man-of-war. Little red spots were produced on the tender skin of the arm, which appeared as if they would have formed watery pustules, but did not.
+
+          </p>
+          <img src="b.png" alt="" class="ikone">
+        </div>
+        <div class="hide" id="mem6d">
+          <h1 class="titled">
+            Where are you come from, gigantic greenstone?
+          </h1>
+          <p class="memory">
+            April 10th <br>
+            A few miles north of Keeling there is another small atoll, the lagoon of which is nearly filled up with coral-mud. Captain Ross found embedded in the conglomerate on the outer coast, a well-rounded fragment of greenstone, rather larger than a man's head: he and the men with him were so much surprised at this, that they brought it away and preserved it as a curiosity. The occurrence of this one stone, where every other particle of matter is calcareous, certainly is very puzzling. The island has scarcely ever been visited, nor is it probable that a ship had been wrecked there!
+          </p>
+          <img src="a.png" alt="" class="ikone">
+          <img src="mem61.jpg" alt="" id="mem6i">
+          <img src="mem62.jpg" alt="" id="mem6i2">
+        </div>
+        		<a href="index.html"><img src="icon.png" alt="" id="ikona"></a>
+          <script type="text/javascript">
+          function island() {
+            var div = document.getElementById('mem1');
+            var div2 = document.getElementById('mem2');
+            var div3 = document.getElementById('mem3');
+            var div4 = document.getElementById('mem4');
+            var div5 = document.getElementById('mem5');
+            var div6 = document.getElementById('mem6');
+            div2.className = "flex rezultati";
+            div3.className = "flex rezultati";
+            div.className = "flex rezultati";
+            div6.className = "flex rezultati";
+            div5.className = "hide rezultati";
+            div4.className = "hide rezultati";
+          }
+
+          function pain() {
+
+            var div = document.getElementById('mem1');
+            var div2 = document.getElementById('mem2');
+            var div3 = document.getElementById('mem3');
+            var div4 = document.getElementById('mem4');
+            var div5 = document.getElementById('mem5');
+            var div6 = document.getElementById('mem6');
+            div.className = "hide rezultati";
+            div2.className = "hide rezultati";
+            div3.className = "hide rezultati";
+            div4.className = "hide rezultati";
+            div5.className = "flex rezultati";
+            div6.className = "hide rezultati";
+
+          }
+          function cocoa() {
+            var div = document.getElementById('mem1');
+            var div2 = document.getElementById('mem2');
+            var div3 = document.getElementById('mem3');
+            var div4 = document.getElementById('mem4');
+            var div5 = document.getElementById('mem5');
+            var div6 = document.getElementById('mem6');
+            div.className = "hide rezultati";
+            div2.className = "flex rezultati";
+            div3.className = "flex rezultati";
+            div4.className = "hide rezultati";
+            div5.className = "hide rezultati";
+            div6.className = "hide rezultati";
+          }
+          function mr() {
+            var div = document.getElementById('mem1');
+            var div2 = document.getElementById('mem2');
+            var div3 = document.getElementById('mem3');
+            var div4 = document.getElementById('mem4');
+            var div5 = document.getElementById('mem5');
+            var div6 = document.getElementById('mem6');
+              div.className = "flex rezultati";
+              div2.className = "hide rezultati";
+              div3.className = "hide rezultati";
+              div4.className = "flex rezultati";
+              div5.className = "hide rezultati";
+              div6.className = "hide rezultati";
+          }
+          function animals() {
+            var div = document.getElementById('mem1');
+            var div2 = document.getElementById('mem2');
+            var div3 = document.getElementById('mem3');
+            var div4 = document.getElementById('mem4');
+            var div5 = document.getElementById('mem5');
+            var div6 = document.getElementById('mem6');
+              div.className = "flex rezultati";
+              div2.className = "flex rezultati";
+              div3.className = "hide rezultati";
+              div4.className = "flex rezultati";
+              div5.className = "hide rezultati";
+              div6.className = "hide rezultati";
+          }
+
+          function showAll() {
+            var div = document.getElementById('mem1');
+            var div2 = document.getElementById('mem2');
+            var div3 = document.getElementById('mem3');
+            var div4 = document.getElementById('mem4');
+            var div5 = document.getElementById('mem5');
+            var div6 = document.getElementById('mem6');
+            div.className = "flex rezultati";
+            div2.className = "flex rezultati";
+            div3.className = "flex rezultati";
+            div4.className = "flex rezultati";
+            div5.className = "flex rezultati";
+            div6.className = "flex rezultati";
+          }
+
+          function mem1() {
+            var arrow = document.getElementById('kraj');
+            var div = document.getElementById('mem1d');
+
+            arrow.className = "hide";
+            div.className = "show memorijed";
+
+
+          }
+          function mem2() {
+            var arrow = document.getElementById('kraj');
+            var div = document.getElementById('mem2d');
+
+            arrow.className = "hide";
+            div.className = "show memorijed";
+
+
+          }
+          function mem3() {
+            var arrow = document.getElementById('kraj');
+            var div = document.getElementById('mem3d');
+
+            arrow.className = "hide";
+            div.className = "show memorijed";
+
+
+          }
+          function mem4() {
+            var arrow = document.getElementById('kraj');
+            var div = document.getElementById('mem4d');
+
+            arrow.className = "hide";
+            div.className = "show memorijed";
+
+
+          }
+          function mem5() {
+            var arrow = document.getElementById('kraj');
+            var div = document.getElementById('mem5d');
+
+            arrow.className = "hide";
+            div.className = "show memorijed";
+
+
+          }
+          function mem6() {
+            var arrow = document.getElementById('kraj');
+            var div = document.getElementById('mem6d');
+
+            arrow.className = "hide";
+            div.className = "show memorijed";
+
+
+          }
+
+          </script>
+
+      </body>
+    </html>
