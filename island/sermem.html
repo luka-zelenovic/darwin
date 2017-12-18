@@ -5,6 +5,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <style>
+		@font-face {
+		font-family: "Yuanti";
+		src: url("yuanti.ttf");
+		}
+					body {
+						font-family: "Yuanti";
+					}
     .container img {
       width: 100%;
       position: absolute;
@@ -223,6 +230,15 @@
       	cursor: pointer;
       }
 
+			#ikona11 {
+				position: fixed;
+				top: 12%;
+				left: 0%;
+				width: 5%;
+				height: 9%;
+				cursor: pointer;
+			}
+
       .darwin  {
         animation: fader;
         animation-duration: 2s;
@@ -248,7 +264,7 @@
 
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   padding: 10px;
-  font-size: 200%;
+  font-size: 150%;
   width: 30%;
   background-color: white;
   border-radius: 25px;
@@ -406,6 +422,7 @@
           <img src="mem62.jpg" alt="" id="mem6i2">
         </div>
         		<a href="index.html"><img src="icon.png" alt="" id="ikona"></a>
+        		<a href="sermem.html"><img src="icon4.png" alt="" id="ikona11"></a>
           <script type="text/javascript">
           function island() {
             var div = document.getElementById('mem1');
